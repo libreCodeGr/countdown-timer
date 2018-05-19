@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Χρονόμετρο</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <button id="stopBtn" class="xtraControls"><i class="far fa-stop-circle"></i></button>
+      <button id="pauseBtn"><i class="fas fa-pause"></i></button>
+      <button data-time="60" class="timer__button" > 1'</button>
+      <button data-time="180" class="timer__button" > 3' </button>
+      <button data-time="300" class="timer__button" > 5'</button>
+      <button data-time="600" class="timer__button" > 10' </button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="MIN">
+      </form>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left" id="display__time-left"></h1>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+  <script src="static/fontawesome-all.js"></script>
+</body>
+</html>
